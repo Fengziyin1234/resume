@@ -1,0 +1,36 @@
+
+	body {
+		font-family: Arial, Verdana, sans-serif; 
+		color: #111111;
+		/*background-image: url(header.jpg);*/
+		/*background-repeat: repeat-x repeat-y;*/
+	}
+	td, th{
+		padding: 7px 10px 10px 10px;
+		border-bottom: 2px solid #111111;
+		border-top: 1px solid #999;
+		text-align: left;
+	}
+	th{
+		text-transform: uppercase;
+	}
+	tr:nth-child(odd) {
+		background-color: #FFFFFF;
+	}
+	tr:nth-child(even) {
+		background-color: #EBF5FB;
+	}
+	tr.hover{
+		background-color: #c3e6e5;
+	}
+
+	ul.navigation {
+		width: 100%;
+		padding:15px;
+		margin: 0px auto 0px auto;
+		text-align: center;
+	}
+	li.navigation{
+		display: inline;
+		margin: 5px 15px;
+	}
