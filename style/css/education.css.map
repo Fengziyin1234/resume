@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW;EACV,SAAS,EAAE,KAAK;EAET,kBAAI;IACA,KAAK,EAAE,IAAI",
+"sources": ["../sass/education.scss"],
+"names": [],
+"file": "education.css"
+}
