@@ -1,150 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Welcome to Ziyin's Homepage!</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta charset="utf-8">
+    <title>Welcome to Ziyin's Homepage!</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/css/index.css">
+    <link rel="stylesheet" type="text/css" href="style/css/home.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
 </head>
 
-<body >
-	<div>
-		<h2 align="center">Ziyin Feng</h2>
-		<address><p align="center">Tel: (201)-208-9431 <br/>  Email: <a href="mailto:zfeng5@stevens.edu">zfeng5@stevens.edu</a>  <br> Address: 22122 Heather Dr, West Windsor, NJ, 08550</p></address>	
-
-		<ul class="navigation">
-			<li class="navigation"> <a href="#Education">Education</a> </li>
-			<li class="navigation"> <a href="#Experience">Experience</a></li>
-			<li class="navigation"> <a href="#Projects">Projects</a></li>
-			<li class="navigation"> <a href="#Volunteer">Volunteer</a></li>
-			<li class="navigation"> <a href="#Skills">Skills</a></li>
-		</ul>
-		<table width="100%">
-			<tr id="Education">
-				<th align="center">Education
-				</th>
-				<td>
-				<ul>
-					<li>
-						Stevens Institute of Technology, Hoboken, NJ <br/>
-						Master of Science in Computer Science, Graduating May 2016		
-					</li>
-					<li>
-						Dalian University of Technology, Dalian, China
-						<br/>
-						Bachelor of Science in Software Engineering, Graduated July 2014
-					</li>
-				</ul>
-				</td>
-			</tr>
-			<tr id="Experience">
-				<th align="center">
-					Experience
-				</th>
-				<td>
-					<ul>
-						<li>
-							<STRONG>Web Programming Intern</STRONG> (Nov. 2015 - Jan. 2016) Company: Musafiri & Associate, New York City, United States
-							<ul>
-								<li>Participating in the Development and maintenance of of website of Musafiri & Associates law firm. <a href="http://www.musafirilaw.com">http://www. musafirilaw.com</a>( Technology including WordPress, PHP, HTML, CSS);</li>
-								<li>
-									Help to colleague to repair hardware, install software and troubleshoot.
-								</li>
-							</ul>
-						</li>
-						<li>
-							<STRONG>Web Development Intern</STRONG> Jul. 2015 - Nov. 2015) Company: WindowsWear Inc(Fashion Technology Company),New York, United States
-							<ul>
-								<li>Participating in Development and maintenance of all running web instances of WindowsWear, including <a href="http://pro.windowswear.com">http://pro.windowswear.com </a> and <a href="http://www.windowswear.com"> http://www.windowswear.com</a>,(technologies including Ruby on Rails, and Bootstrap);</li>
-								<li>
-									Compressing 10,000,000+ images increasing webpage-load-speed and Backing-up them for future use via bash scripts;
-								</li>
-								<li>
-									Architecture and global deployment of the database, cloud infrastructure and security solutions using Amazon Web Services (EC2, RDS, Elastic Beanstalk, CloudFront) to handle a worldwide traffic.
-								</li>
-							</ul>
-						</li>
-						<li>
-							<STRONG>IT intern</STRONG> (Nov. 2013 - Feb. 2014) Company: Bank of Montreal, Guangzhou, China
-						</li>
-						<ul>
-							<li>
-								Cooperated with vendor team from Tata consultancy services to build and maintain an internal system for reporting based on JAVA, Oracle database, SAP HANA platform and ABAP;
-							</li>
-							<li>
-								Coded Bash Scripts to update Antivirus software and backed-up important resource automatically;
-							</li>
-						</ul>
-					</ul>
-				</td>
-			</tr>
-			<tr id="Projects">
-				<th>
-					Projects
-				</th>
-				<td>
-					<ul>
-						<li>
-							<strong>Enterprise Software Architecture and Design</strong>
-						</li>
-						<ul>
-							<li>
-								Designed XML schemas for entity Patient, Provider and Treatment, create instances for schemas and use XQuery to access to instances;
-							</li>
-							<li>
-								Created SOAP and REST web services for clinical information system and deploy them to Amazon AWS platform. Database: PostgreSQL, Web Server: glassfish 4.1.
-							</li>
-						</ul>
-						<li>
-							<strong>MF-Structure query processing engine</strong>
-						</li>
-							<ul>
-								<li>
-									 MF(multi-feature)-structure is java based structure which can increase efficiency for handling aggregation queries;
-								</li>
-								<li>
-									Taken 6 operant and then generate a specific java file for aggregation and group queries based on JAVA, PostgreSQL;
-								</li>
-							</ul>
-						<li>
-							<strong>Food recipes hunter</strong>
-							<ul>
-								<li>
-								Recipes Hunter application is ruby on rails based application which can pass the query, retrieve json data through API, search by keywords and display the result;
-								</li>
-								<li>
-									Application is MVC framework and basic HTML, CSS and javascript are implemented and deployed on Heroku.
-								</li>
-							</ul>
-						</li>
-					</ul>
-
-				</td>
-			</tr >
-			<tr id="Volunteer">
-				<th>Volunteer</th>
-				<td>
-					<ul>
-						<li>
-							<Strong>Volunteer Teacher</Strong> (Sep. 2014 – Jan. 2015) Jubilee Center, Hoboken
-							<ul>
-								<li>Organized activities and outings for children;</li>
-								<li>Helped with homework.</li>
-							</ul>
-							</li>
-							<li>
-							<Strong>Orientation Leader </Strong> Stevens Institute of Technology, Hoboken
-							<ul>
-								<li>Provide support and information for new first-year and transfer graduate and PhD students </li>
-								<li>Organized activities for new students</li>
-							</ul>
-						</li>
-					</ul>
-				</td>
-			</tr id="Skills">
-			<tr>
-				
-			</tr>
-		</table>
-	</li>
+<body ng-app='ResumeApp'>
+    <div class="resume__header col-md-12 navbar ">
+        <a class="navbar-brand" ui-sref="home" "> <h1>Ziyin Feng</h1></a>
+    	 <ul class="nav navbar-nav resume__header-navi pull-right ">
+            <li class="navigation "> <a ui-sref="education " ui-sref-active="activeTab ">Education</a> </li>
+            <li class="navigation "> <a ui-sref="experience " ui-sref-active="activeTab ">Experience</a></li>
+            <li class="navigation "> <a ui-sref="project " ui-sref-active="activeTab ">Projects</a></li>
+            <li class="navigation "> <a ui-sref="volunteer " ui-sref-active="activeTab ">Volunteer</a></li>
+            <!-- <li class="navigation "> <a ui-sref=" " ui-sref-active="activeTab ">Skills</a></li> -->
+        </ul>
+    </div>
+        <!-- <address>
+            <p align="center ">Tel: (201)-208-9431
+                <br/> Email: <a href="mailto:zfeng5@stevens.edu ">zfeng5@stevens.edu</a>
+                <br> Address: 22122 Heather Dr, West Windsor, NJ, 08550</p>
+        </address> -->
+        <ui-view></ui-view>
+        <!-- Libraries -->
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js "></script>
+        <script src="lib/angular.min.js "></script>
+        <script src="lib/angular-ui-router.min.js "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+        <!-- Modules -->
+        <script src="src/Resume/resume.module.js "></script>
+        <!-- Routes -->
+        <script src="src/routes.js "></script>
 </body>
+
 </html>

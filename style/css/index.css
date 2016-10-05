@@ -1,0 +1,24 @@
+body {
+  font-family: 'Ubuntu', sans-serif !important; }
+  body .resume__header {
+    padding-top: 40px;
+    border-bottom: 1px lightgrey solid;
+    padding-bottom: 40px; }
+    body .resume__header > a {
+      margin-left: 20%; }
+      body .resume__header > a h1 {
+        font-size: 3em;
+        color: #1FCFCC;
+        border-radius: 3px;
+        display: inline; }
+    body .resume__header ul {
+      padding-top: 20px;
+      margin-right: 8.33%; }
+      body .resume__header ul li a {
+        color: grey;
+        border-radius: 3px; }
+        body .resume__header ul li a:hover {
+          color: #FC9F9E;
+          background-color: #FFFFFF; }
+
+/*# sourceMappingURL=index.css.map */
