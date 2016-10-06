@@ -1,0 +1,86 @@
+<div class="col-xs-12 " ng-controller="ContactController as contact">
+    <uib-tabset active="index" justified="true">
+        <uib-tab index="0" heading="Information">
+            <div class="form">
+                <div class="form-group has-feedback has-feedback-right">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" placeholder="First name" ng-model="information.firstname" autofocus>
+                    <i class="glyphicon glyphicon-user form-control-feedback"></i>
+                </div>
+                <div class="form-group has-feedback has-feedback-right">
+                    <label for="exampleInputPassword1">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last name" ng-model="information.lastname">
+                    <i class="glyphicon glyphicon-tree-deciduous form-control-feedback"></i>
+                </div>
+                <div class="form-group has-feedback has-feedback-right">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" placeholder="Email" ng-model="information.email">
+                    <i class="glyphicon glyphicon-envelope form-control-feedback"></i>
+                </div>
+                <div class="form-group has-feedback has-feedback-right">
+                    <label>Phone</label>
+                    <input type="tel" class="form-control" placeholder="Phone Number" ng-model="information.tel">
+                    <i class="glyphicon glyphicon-earphone form-control-feedback"></i>
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <select class="form-control" ng-model="information.location">
+                        <option ng-repeat="location in information.locations" value="{{location.value}}">{{location.value}}</option>
+                    </select>
+                </div>
+                <div class="contact__information-date form-group">
+                    <p>The Current time is {{time | date : " MMM d, y, hh:mm:ss" }}.</p>
+                </div>
+                <button class="btn btn-primary" ng-click="infor_submit()" ng-disabled="information_valid()" >NEXT</button>
+            </div>
+        </uib-tab>
+        <uib-tab heading="Query" index="1" disable="query_active || information_valid()" >
+            <div class="form">
+                <div class="form-group ">
+                    <label>Title</label>
+                    <input type="text" class="form-control" placeholder="Title" ng-model="query.title">
+                </div>
+                <div class="form-group ">
+                    <label>Content</label>
+                    <textarea class="form-control" placeholder="Content of Query should go there" ng-model="query.content"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select class="form-control" ng-model="query.category">
+                        <option ng-repeat="category in query.categories" value="{{category.title}}">{{category.title}}</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Priority</label>
+                    <span uib-rating ng-model="rate" max="max" on-hover="hoveringOver(value)" on-leave="overStar = null"  aria-labelledby="default-rating"></span>
+                    <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}">{{percent}}%</span>
+                </div>
+                <button class="btn btn-primary" ng-click="query_submit()" ng-disabled="query_valid()" >NEXT</button>
+            </div>
+        </uib-tab>
+        <uib-tab heading="Confirmation" index="2" disable="confirm_active || query_valid()" >
+            <p>Here is the confirmation for your query. if everything is correct, feel free to send it to us. We would love to take a look adn will get back to you as soon as possible. In the meantime, you can send the confirmation to your email by clicking on the "Mail To" link.</p>
+            <h5>Comfirmation ID</h5>
+            <p>#{{confirmation_number}}</p>
+            <h5>Comfirmation Date</h5>
+            <p>{{time | date : " MMM d, y, hh:mm:ss" }}</p>
+            <h5>Comfirmation Detail</h5>
+            <div class="comfirmation_detail">
+                <p>===== Information =====</p>
+                <p>Full Name: {{information.firstname}} {{information.lastname}}</p>
+                <p>Email: {{information.email}}</p>
+                <p>Phone: {{information.tel}}</p>
+                <p>Location: {{information.location}}</p>
+                <p>===== Query ======</p>
+                <p>Title: {{query.title}}</p>
+                <p>Category: {{query.category}}</p>
+                <p>Priority: {{query.priority}}</p>
+                <p>Content: {{query.content}}</p>
+            </div>
+            <h5>Mail To</h5>
+            <a href="mailto:fengziyin1234@gmail.com?Subject={{query.title}}&body={{query.content}}" target="_top">
+                {{information.firstname}} {{information.lastname}}
+            </a>
+        </uib-tab>
+    </uib-tabset>
+</div>
