@@ -5,4 +5,9 @@
 .contact__information-date {
   color: green; }
 
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey; }
+
 /*# sourceMappingURL=contact.css.map */

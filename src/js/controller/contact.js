@@ -8,6 +8,7 @@
 
     function ContactController($scope, $window, $timeout) {
 
+
         $scope.time = new Date();
         console.log("run");
         $scope.information = {
@@ -273,10 +274,10 @@
             content: "",
             category: "",
             categories: [
-            {"title":"Technology"},
-            {"title":"Work"},
-            {"title":"Job"},
-            {"title":"Personal"}
+                { "title": "Technology" },
+                { "title": "Work" },
+                { "title": "Job" },
+                { "title": "Personal" }
             ],
             priority: ""
         }
@@ -321,6 +322,8 @@
             return $scope.information_valid() || !($scope.query.title != '' && $scope.query.content != '' && $scope.query.category != '' && $scope.query.priority != '');
         };
     }
+
+
 
 
 
