@@ -1,5 +1,5 @@
 .resume__home-image {
-
+	position: fixed;
 	img {
 		width: 90%;
 	}
@@ -7,6 +7,7 @@
 }
 
 .resume__home-content {
+	font-size: 1.2em; 
 	padding-top: 20px;
 	img{
 		width: 1em;

@@ -4,36 +4,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Ziyin's Homepage!</title>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style/css/index.css">
-    <link rel="stylesheet" type="text/css" href="style/css/home.css">
-	<link rel="stylesheet" type="text/css" href="style/css/education.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <!-- Latest compiled and minified JavaScript -->
+    <title>Welcome to Ziyin's Homepage!</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/css/index.css">
+    <link rel="stylesheet" type="text/css" href="style/css/home.css">
+    <link rel="stylesheet" type="text/css" href="style/css/education.css">
+    <link rel="stylesheet" type="text/css" href="style/css/experience.css">
+    <link rel="stylesheet" type="text/css" href="style/css/project.css">
+    <link rel="stylesheet" type="text/css" href="style/css/volunteer.css">
+    <link rel="stylesheet" type="text/css" href="style/css/contact.css">
 </head>
 
 <body ng-app='ResumeApp'>
-    <div class="resume__header col-md-12 navbar ">
-        <a class="navbar-brand" ui-sref="home" "> <h1>Ziyin Feng</h1></a>
-    	 <ul class="nav navbar-nav resume__header-navi pull-right ">
-            <li class="navigation "> <a ui-sref="education " ui-sref-active="activeTab ">Education</a> </li>
-            <li class="navigation "> <a ui-sref="experience " ui-sref-active="activeTab ">Experience</a></li>
-            <li class="navigation "> <a ui-sref="project " ui-sref-active="activeTab ">Projects</a></li>
-            <li class="navigation "> <a ui-sref="volunteer " ui-sref-active="activeTab ">Volunteer</a></li>
-            <!-- <li class="navigation "> <a ui-sref=" " ui-sref-active="activeTab ">Skills</a></li> -->
-        </ul>
+    <div class="navbar navbar-default resume__header col-md-12">
+        <a class="navbar-brand" ui-sref="home" "><h1>Ziyin Feng</h1></a>
+            <ul class="nav navbar-nav resume__header-navi pull-right">
+            <li class=" pull-left"> <a ui-sref="home" ui-sref-active="activeTab ">About</a> </li>
+            <li class=" pull-left"> <a ui-sref="education" ui-sref-active="activeTab ">Education</a> </li>
+            <li class=" pull-left"> <a ui-sref="experience" ui-sref-active="activeTab ">Experience</a></li>
+            <li class=" pull-left"> <a ui-sref="project" ui-sref-active="activeTab ">Projects</a></li>
+            <li class=" pull-left"> <a ui-sref="volunteer" ui-sref-active="activeTab ">Volunteer</a></li>
+                    <!-- <li class="navigation "> <a ui-sref="contact " ui-sref-active="activeTab ">Contact</a></li> -->
+                    <!-- <li class="navigation "> <a ui-sref=" " ui-sref-active="activeTab ">Skills</a></li> -->
+                </ul>   
+
     </div>
-        <!-- <address>
-            <p align="center ">Tel: (201)-208-9431
-                <br/> Email: <a href="mailto:zfeng5@stevens.edu ">zfeng5@stevens.edu</a>
-                <br> Address: 22122 Heather Dr, West Windsor, NJ, 08550</p>
-        </address> -->
         <ui-view></ui-view>
+        <script src="//platform.linkedin.com/in.js " type="text/javascript "></script>
+        <script type="IN/MemberProfile " data-id="https://www.linkedin.com/in/ziyin-feng-358a38b8 " data-format="click "></script>
         <!-- Libraries -->
         <script src="lib/jquery-3.1.1.min.js "></script>
         <script src="lib/angular.min.js "></script>
@@ -43,6 +47,9 @@
         <script src="src/Resume/resume.module.js "></script>
         <!-- Routes -->
         <script src="src/routes.js "></script>
+
+        <!-- custom js -->
+        <script src="src/script/index.js "></script>
 </body>
 
 </html>

@@ -40,6 +40,12 @@
     	 .state('volunteer',{
     	 	url: '/volunteer',
     	 	templateUrl: 'src/templates/volunteer.html'
-    	 });
+    	 })
+
+         // contact part
+         .state('contact',{
+            url: '/contact',
+            templateUrl: 'src/templates/contact.html'
+         });
     }
 })();
