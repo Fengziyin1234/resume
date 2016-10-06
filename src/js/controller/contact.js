@@ -275,7 +275,7 @@
             categories: [
             {"title":"Technology"},
             {"title":"Work"},
-            {"title":""},
+            {"title":"Job"},
             {"title":"Personal"}
             ],
             priority: ""
