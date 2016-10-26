@@ -1,0 +1,32 @@
+{
+  "name": "resume",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "angular-google-maps": "^2.4.0",
+    "angular": "^1.5.8",
+    "angular-ui-bootstrap": "^2.1.4",
+    "bootstrap": "^3.3.7",
+    "gulp": "^3.9.1",
+    "jQuery": "^1.7.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fengziyin1234/resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fengziyin1234/resume/issues"
+  },
+  "homepage": "https://github.com/Fengziyin1234/resume#readme"
+}

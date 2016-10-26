@@ -1,5 +1,5 @@
 .comfirmation_detail {
-  border: 1px solid black;
+  border: 1.1px solid black;
   padding: 5px; }
 
 .contact__information-date {
@@ -10,5 +10,3 @@
   height: 400px;
   background-color: grey;
   margin-bottom: 20px; }
-
-/*# sourceMappingURL=contact.css.map */
